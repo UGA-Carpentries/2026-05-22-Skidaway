@@ -367,20 +367,8 @@ change the value of `carpentry` to `incubator`.
 <hr/>
 
 
-{% comment %}
-SCHEDULE
+<h2 id="schedule">Schedule</h2>
 {% include custom-schedule.html %}
-{% comment %}
-SETUP
-
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
-
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
