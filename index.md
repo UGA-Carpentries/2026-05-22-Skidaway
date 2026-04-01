@@ -59,27 +59,18 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endif %}
 
 {% comment %}
-EVENTBRITE
+GOOGLE FORM
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<div id="eventbrite-widget-container"></div>
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-<script type="text/javascript">
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: {{page.eventbrite}},
-        iframeContainerId: 'eventbrite-widget-container',
-    });
-</script>
-{% endif %}
+<h2>Register for this workshop</h2>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUESGXX5N-e1ccrnKmAA0GEASosZJAOu1pIfc8pmFD0hqKQA/viewform?embedded=true" 
+        width="100%"
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+  Loading…
+</iframe>
 
 
 <h2 id="general">General Information</h2>
