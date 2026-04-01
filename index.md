@@ -17,7 +17,7 @@ instructor: ["Claire Zwiers Cook"] # boxed, comma-separated list of instructors'
 helper: ["Mallory Mintz", "Lizzy Wu","Sean Anderson"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["ccz99536@uga.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+google form: https://forms.gle/SMtk87MRBF1iHY4A7       # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 what3words:           # optional: what3words (https://what3words.com) address of the workshop venue, without leading slashes e.g. "globe.lessening.computers"
 ---
 
@@ -61,9 +61,10 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% comment %}
 GOOGLE FORM
 
+{% if page.google_form %}
 <h2>Register for this workshop</h2>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUESGXX5N-e1ccrnKmAA0GEASosZJAOu1pIfc8pmFD0hqKQA/viewform?embedded=true" 
+<iframe src="{{ page.google_form }}"
         width="100%"
         height="900"
         frameborder="0"
@@ -71,6 +72,7 @@ GOOGLE FORM
         marginwidth="0">
   Loading…
 </iframe>
+{% endif %}
 
 
 <h2 id="general">General Information</h2>
